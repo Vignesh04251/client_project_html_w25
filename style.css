@@ -1,0 +1,183 @@
+.skip a {
+    position:absolute;
+    top: -2000px;
+}
+
+.skip:focus-within a,
+.skip a:focus {
+    position:absolute;
+    top: 10px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+header img {
+    height: 40px;
+    border-radius: 8%;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 8px;
+}
+
+nav ul li {
+    background-color: #FFCB05;
+    padding: 4px 7px;
+    border-radius: 8%;
+}
+
+nav ul li a {
+    color: #00274C;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+h1 {
+    width: 100%;
+    font-size: 3rem;
+    color: #00274C;
+    text-align: center;
+    margin-top: 1rem;
+    padding-left: 1rem;
+}
+
+  
+nav ul li:hover,
+nav ul li:focus {
+    background-color: white;
+    border-radius: 8%;
+    border: solid, 2px,#00274C ;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 5%;
+}
+  
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.intro {
+    width: 100%;
+}
+
+.services{
+    gap: 20px;
+}
+.services img{
+    width: 100%;
+    height: auto;
+}
+
+.intro ul {
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.grid-container ul{
+    padding: 10px;
+    margin-left: 20px;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+}
+.context {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+  
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+    padding: 2%;
+    border-radius: 4%;
+    text-align: left;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+    max-height: 400px;
+  }
+  
+  .card h3 {
+    color: #00274C;
+    font-size: 1.5em;
+    margin-top: 5%;
+  }
+  
+  .card p {
+    font-size: 1em;
+    color: #333;
+    margin-top: 2%;
+  }
+  
+  .card ol {
+    padding-left: 8%;
+  }
+  
+  .card ol li {
+    margin-bottom: 2%;
+  }
+
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 5%;
+    font-size: 1em;
+    gap: 4%;
+    border-top: 4px solid #00274C;
+  }
+  
+  footer p {
+    margin: 2% 0;
+  }
+  
+  footer a {
+    color: #00274C;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  footer a:hover,
+  footer a:focus {
+    text-decoration: underline;
+  }
