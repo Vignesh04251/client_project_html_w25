@@ -73,13 +73,64 @@
             <img class="context" src="images/UMSI_DesignJam_GreatLakesWaterSafety_05.JPG" alt="An group of designers working on a design challenge for water safety.">
         </section>
         </div>
+        <form action="https://formspree.io/f/xqapywdn" method="POST">
+            <fieldset>
+                <legend>Interested in our resources? Don't hesistate to reach out.</legend>
+                <label for="first-name">First Name</label>
+                <input type="text" name="first-name" id="first-name"
+                    placeholder="Enter your first name" required>
 
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last-name" id="last-name"
+                    placeholder="Enter your last name" required>
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email"
+                    placeholder="Enter your email ID">
+
+                <label for="degree">Degree</label>
+                <input type="text" id="degree" name="degree"
+                    placeholder="What degree are you pursuing?">
+
+                    <p>What resources are you interested in?</p>
+                    <label for="cew-mentorship">
+                        <input type="checkbox" id="cew-mentorship" name="cew_resources" value="Mentorship">
+                        CEW Mentorship Programs
+                    </label><br>
+                    
+                    <label for="cew-scholarships">
+                        <input type="checkbox" id="cew-scholarships" name="cew_resources" value="Scholarships">
+                        CEW Scholarships
+                    </label><br>
+                    
+                    <label for="cew-workshops">
+                        <input type="checkbox" id="cew-workshops" name="cew_resources" value="Workshops">
+                        CEW Workshops
+                    </label><br>
+                    
+                    <label for="cew-career">
+                        <input type="checkbox" id="cew-career" name="cew_resources" value="Career Services">
+                        CEW Services
+                    </label><br>
+
+                <label for="message">Additional Comments</label>
+                <textarea name="message" id="message" rows="4"
+                    placeholder="This section is optional."></textarea>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+             <!-- I used formspree to help me record submissions. -->
     </main>
     <footer>
         <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
         <p>CAPS | <a href="https://caps.umich.edu/">Counseling Services </a></p>
         <p>CEW+ | <a href="https://www.cew.umich.edu/">Center for Women Empowerment </a></p>
+        <p>© Copyright <span id="year"></span> by University of Michigan. All rights reserved.</p>  
+        <!-- Taken from codex world. -->  
     </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
      <!-- Some content was generated using Chat GPT with the prompt, "write me some descriptive paragraphs based on information from the CEW at UMich website" (Jan 26th) -->
 </body>
 

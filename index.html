@@ -94,11 +94,63 @@
         <!-- Content taken & modified from UMGPT with the prompt, "write me a webpage of intro content to help University of Michigan Master's students navigate different resources for being successful in grad school - this will include academic resources, physical health resources, mental health resources, support for life outside the classroom"
         UMGPT. (2024). UMGPT (August 29th version) [Large language model]. -->
     </div>
+        <form action="https://formspree.io/f/mldjpaav" method="POST">
+            <fieldset>
+                <legend>Contact Us!</legend>
+                <label for="first-name">First Name</label>
+                <input type="text" name="first-name" id="first-name"
+                    placeholder="Enter your first name" required>
+
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last-name" id="last-name"
+                    placeholder="Enter your last name" required>
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email"
+                    placeholder="Enter your email ID">
+
+                <label for="degree">Degree</label>
+                <input type="text" id="degree" name="degree"
+                    placeholder="What degree are you pursuing?">
+
+                    <p>What resources are you interested in?</p>
+                    <label for="uhs">
+                        <input type="checkbox" id="uhs" name="uhs" value="Health">
+                        University Health Services
+                    </label><br>
+                    
+                    <label for="caps">
+                        <input type="checkbox" id="caps" name="caps" value="CAPS">
+                        Counseling and Psychological Services
+                    </label><br>
+                    
+                    <label for="academic-resources">
+                        <input type="checkbox" id="academic-resources" name="academic-resources" value="Academic Resources">
+                        Academic Resources
+                    </label><br>
+                    
+                    <label for="career-services">
+                        <input type="checkbox" id="career-services" name="career-services" value="Career Services">
+                        Career Services
+                    </label><br>
+
+                <label for="message">Additional Comments</label>
+                <textarea name="message" id="message" rows="4"
+                    placeholder="This section is optional."></textarea>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+            <!-- I used formspree to help me record submissions. -->
     </main>
     <footer>
         <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
         <p>CAPS | <a href="https://caps.umich.edu/">Counseling Services </a></p>
-        <p>CEW+ | <a href="https://www.cew.umich.edu/">Center for Women Empowerment </a></p>        
+        <p>CEW+ | <a href="https://www.cew.umich.edu/">Center for Women Empowerment </a></p> 
+        <p>© Copyright <span id="year"></span> by University of Michigan. All rights reserved.</p>  
+        <!-- Taken from codex world. -->     
     </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 </html>

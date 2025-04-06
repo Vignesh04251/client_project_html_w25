@@ -60,13 +60,63 @@
             <img class="context" src="images/MCOMMONS-WinterSemester2025-03.jpg" alt="An image of playful stickers with positive messages.">
         </section>
         </div>
+        <form action="https://formspree.io/f/xldjpaza" method="POST">
+            <fieldset>
+                <legend>Learn more about what CAPS has to offer!</legend>
+                <label for="first-name">First Name</label>
+                <input type="text" name="first-name" id="first-name"
+                    placeholder="Enter your first name" required>
+
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last-name" id="last-name"
+                    placeholder="Enter your last name" required>
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email"
+                    placeholder="Enter your email ID">
+
+                <label for="degree">Degree</label>
+                <input type="text" id="degree" name="degree"
+                    placeholder="What degree are you pursuing?">
+
+                    <p>What resources are you interested in?</p>
+                    <label for="lets-talk">
+                        <input type="checkbox" id="lets-talk" name="lets-talk" value="Let's Talk">
+                        Let's Talk
+                    </label><br>
+                    
+                    <label for="individual-peer-counseling">
+                        <input type="checkbox" id="individual-peer-counseling" name="individual-peer-counseling" value="Individual Peer Counseling">
+                        Individual Peer Counseling
+                    </label><br>
+                    
+                    <label for="first-year-guide">
+                        <input type="checkbox" id="first-year-guide" name="first-year-guide" value="First Year Guide">
+                        First Year Guide
+                    </label><br>
+                    
+                    <label for="scope-of-services">
+                        <input type="checkbox" id="scope-of-services" name="scope-of-services" value="Scope of Services">
+                        Scope of Services
+                    </label><br>
+                <label for="message">Additional Comments</label>
+                <textarea name="message" id="message" rows="4"
+                    placeholder="This section is optional."></textarea>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+            <!-- I used formspree to help me record submissions. -->
     </main>
     <footer>
         <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
         <p>CAPS | <a href="https://caps.umich.edu/">Counseling Services </a></p>
         <p>CEW+ | <a href="https://www.cew.umich.edu/">Center for Women Empowerment </a></p>
+        <p>© Copyright <span id="year"></span> by University of Michigan. All rights reserved.</p>  
+        <!-- Taken from codex world. -->  
     </footer>
-    
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
      <!-- Some content was generated using Chat GPT with the prompt, "write me a short description for an "let's talk" program at the university of michigan" (Jan 26th) -->
 </body>
 
